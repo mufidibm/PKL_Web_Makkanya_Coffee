@@ -1,23 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pkl-web-makkanya-coffee</title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/style.css" />
   </head>
   <body>
-    <!-- Open the modal using ID.showModal() method -->
-<button class="btn m-5" onclick="my_modal_1.showModal()">open modal</button>
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click outside to close</p>
-  </div>
-  <form method="dialog" class="modal-backdrop">
-    <button>close</button>
-  </form>
-</dialog>
+    <div class="navbar bg-[#EFE7E0] shadow-sm justify-around py-3">
+      <div class="">
+        <a class="hover:cursor-pointer p-0">
+          <img src="assets/images/logo.png" class="h-10" alt="" />
+        </a>
+      </div>
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base">
+          <li><a class="font-medium hover:text-[#84430d]">Home</a></li>
+          <li><a class="font-medium hover:text-[#84430d]">Journey</a></li>
+          <li class="dropdown dropdown-hover">
+            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Business Unit
+              <!-- Arrow Down Icon -->
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60">
+              <li><a>Makkanya Coffee</a></li>
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Our Gallery
+              <!-- Arrow Down Icon -->
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Makkanya Coffee</a></li>
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Kemitraan
+              <!-- Arrow Down Icon -->
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Partnership
+              <!-- Arrow Down Icon -->
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Hub Depok</a></li>
+              <li><a>Hub Tangerang</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <a class="btn rounded-[6px] bg-[#804C20] hover:bg-[#A66832] text-white">
+          Contact
+        </a>
+      </div>
+    </div>
   </body>
 </html>
