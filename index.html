@@ -2,13 +2,67 @@
 <html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pkl-web-makkanya-coffee</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Bikin area hover lebih besar di parent dropdown */
+      .dropdown-hover {
+        position: relative;
+      }
+
+      .dropdown-hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 0.75rem;
+        background: transparent;
+        pointer-events: auto;
+      }
+
+      /* Kasih jarak dropdown dari navbar */
+      .dropdown-hover .dropdown-content {
+        margin-top: 0.75rem !important;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar bg-[#EFE7E0] shadow-sm justify-around py-3">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
       <div class="">
         <a class="hover:cursor-pointer p-0">
           <img src="assets/images/logo.png" class="h-10" alt="" />
@@ -19,9 +73,10 @@
           <li><a class="font-medium hover:text-[#84430d]">Home</a></li>
           <li><a class="font-medium hover:text-[#84430d]">Journey</a></li>
           <li class="dropdown dropdown-hover">
-            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
               Business Unit
-              <!-- Arrow Down Icon -->
               <svg
                 class="w-4 h-4"
                 fill="none"
@@ -37,15 +92,16 @@
             </a>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60">
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-60">
               <li><a>Makkanya Coffee</a></li>
               <li><a>Makkanya Express</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-hover">
-            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
               Our Gallery
-              <!-- Arrow Down Icon -->
               <svg
                 class="w-4 h-4"
                 fill="none"
@@ -61,15 +117,16 @@
             </a>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52">
               <li><a>Makkanya Coffee</a></li>
               <li><a>Makkanya Express</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-hover">
-            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
               Kemitraan
-              <!-- Arrow Down Icon -->
               <svg
                 class="w-4 h-4"
                 fill="none"
@@ -85,14 +142,15 @@
             </a>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52">
               <li><a>Makkanya Express</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-hover">
-            <a tabindex="0" class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
               Partnership
-              <!-- Arrow Down Icon -->
               <svg
                 class="w-4 h-4"
                 fill="none"
@@ -108,7 +166,7 @@
             </a>
             <ul
               tabindex="0"
-              class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52">
               <li><a>Hub Depok</a></li>
               <li><a>Hub Tangerang</a></li>
             </ul>
@@ -119,6 +177,37 @@
         <a class="btn rounded-[6px] bg-[#804C20] hover:bg-[#A66832] text-white">
           Contact
         </a>
+      </div>
+    </div>
+    <div
+      class="hero min-h-screen place-items-start items-center"
+      style="
+        background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);
+      ">
+      <div class="hero-overlay"></div>
+      <div class="hero-content justify-start text-neutral-content ms-6">
+        <div class="max-w-[60%]">
+          <h1 class="mb-5 text-7xl font-bold text-white">
+            Wholeheartedly Dedicated for You
+          </h1>
+          <p class="mb-5 text-white text-[17px]">
+            In line with the company motto of MKY Group, we want to convey the
+            message that we provide sincere service to our customers.
+          </p>
+          <p class="mb-5 text-white text-[17px]">
+            Through this motto, we also emphasize that everything we do and
+            every creation in the form of our offerings comes from the heart and
+            is made with love for our customers.
+          </p>
+          <button
+            class="btn btn-md me-2 text-base border-0 shadow-none text-white hover:bg-[#A66832] bg-[#804C20]">
+            Get in Touch
+          </button>
+          <button
+            class="btn btn-md text-base border-0 shadow-none text-white hover:bg-[#4A280B] bg-[#A16530]">
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   </body>
