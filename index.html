@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"  
-    />
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      html{
+      html {
         scroll-behavior: smooth;
       }
+
       /* Bikin area hover lebih besar di parent dropdown */
       .dropdown-hover {
         position: relative;
@@ -41,8 +41,10 @@
       }
     </style>
   </head>
+
   <body>
-    <div class="navbar sticky top-0 z-[999] bg-[#EFE7E0] shadow-sm justify-around py-3">
+    <div
+      class="navbar sticky top-0 z-[999] bg-[#EFE7E0] shadow-sm justify-around py-3">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
           <svg
@@ -79,8 +81,14 @@
       </div>
       <div class="hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-base">
-          <li><a class="font-medium hover:text-[#84430d]" href="#home">Home</a></li>
-          <li><a class="font-medium hover:text-[#84430d]" href="#journey">Journey</a></li>
+          <li>
+            <a class="font-medium hover:text-[#84430d]" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="font-medium hover:text-[#84430d]" href="#journey">
+              Journey
+            </a>
+          </li>
           <li class="dropdown dropdown-hover">
             <a
               tabindex="0"
@@ -103,7 +111,7 @@
               tabindex="0"
               class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
               style="margin-top: 20px !important">
-              <li><a href="#mc">Makkanya Coffee</a></li>
+              <li><a>Makkanya Coffee</a></li>
               <li><a>Makkanya Express</a></li>
             </ul>
           </li>
@@ -129,7 +137,7 @@
               tabindex="0"
               class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
               style="margin-top: 20px !important">
-              <li><a>Makkanya Coffee</a></li>
+              <li><a href="#mc">Makkanya Coffee</a></li>
               <li><a>Makkanya Express</a></li>
             </ul>
           </li>
@@ -195,9 +203,7 @@
     <div
       id="home"
       class="hero min-h-screen place-items-start items-center"
-      style="
-        background-image: url(./assets/images/bg1.jpg);
-      ">
+      style="background-image: url(./assets/images/bg1.jpg)">
       <div class="hero-overlay"></div>
       <div class="hero-content justify-start text-neutral-content ms-6">
         <div class="max-w-[57%]">
@@ -218,7 +224,8 @@
             Get in Touch
           </button>
           <button
-            class="btn btn-md text-base border-0 shadow-none text-white hover:bg-[#4A280B] bg-[#A16530]"><a href="#objective">Learn More</a>
+            class="btn btn-md text-base border-0 shadow-none text-white hover:bg-[#4A280B] bg-[#A16530]">
+            <a href="#objective">Learn More</a>
           </button>
         </div>
       </div>
@@ -241,25 +248,26 @@
             <!-- Badge -->
             <div class="inline-block mb-8">
               <span
-                class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium"
-                >Our Journey</span
-              >
+                class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium">
+                Our Journey
+              </span>
             </div>
 
             <!-- Text Content -->
             <div class="text-gray-800 text-lg leading-relaxed space-y-4">
               <p>
                 Founded in 2023 under
-                <span class="text-[#a66832] italic font-['Inter']"
-                  >PT Makkanya Kopi Indonesia, MKY Group</span
-                >
+                <span class="text-[#a66832] italic font-['Inter']">
+                  PT Makkanya Kopi Indonesia, MKY Group
+                </span>
                 is a company focused on the lifestyle sector, especially in
-                <span class="text-[#A67C52] italic font-['Inter']"
-                  >Food & Beverage</span
-                >. Currently,
-                <span class="text-[#A67C52] italic font-['Inter']"
-                  >MKY Group</span
-                >
+                <span class="text-[#A67C52] italic font-['Inter']">
+                  Food & Beverage
+                </span>
+                . Currently,
+                <span class="text-[#A67C52] italic font-['Inter']">
+                  MKY Group
+                </span>
                 manages two main brands:
                 <span class="text-[#A67C52] italic font-['Inter']">
                   Makkanya Coffee
@@ -274,12 +282,13 @@
                 </span>
                 , a mobile coffee cart that has more than 155 units operating
                 across
-                <span class="text-[#A67C52] italic font-['Inter']"
-                  >Jakarta as of May 2025</span
-                >. As the company grows,
-                <span class="text-[#A67C52] italic font-['Inter']"
-                  >MKY Group</span
-                >
+                <span class="text-[#A67C52] italic font-['Inter']">
+                  Jakarta as of May 2025
+                </span>
+                . As the company grows,
+                <span class="text-[#A67C52] italic font-['Inter']">
+                  MKY Group
+                </span>
                 is always looking for new ways to innovate and reach more
                 people. We're committed to opening more
                 <span class="text-[#A67C52] italic font-['Inter']">
@@ -306,22 +315,19 @@
             <img
               class="w-40 h-40 object-cover"
               src="assets/images/logo3.webp"
-              alt="Logo ke 3"
-            />
+              alt="Logo ke 3" />
           </div>
           <div class="carousel-item">
             <img
               class="w-40 h-40 object-contain"
               src="assets/images/logo.png"
-              alt="Logo Utama "
-            />
+              alt="Logo Utama " />
           </div>
           <div class="carousel-item">
             <img
               class="w-40 h-40 object-cover"
               src="assets/images/logo4.webp"
-              alt="Pizza"
-            />
+              alt="Pizza" />
           </div>
         </div>
       </div>
@@ -329,46 +335,186 @@
 
     <div class="inline-block mt-10 flex justify-center">
       <span
-        class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium flex justify-around items-center px-8"
-        >Our Objective</span
-      >
+        class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium flex justify-around items-center px-8">
+        Our Objective
+      </span>
     </div>
-    <div class="text-gray-800 text-5xl leading-relaxed space-y-4 text-center font-['Inter']">
-              <p>
-                   Wholeheartedly 
-                <span class="text-[black] italic font-['Serif'] text-center">
-                  Dedicated </span> for You
-              </p>
-            </div>
-    <div class="text-gray-800 text-base leading-relaxed space-y-4 text-center font-['Inter']">
-     <p class="text-[#a66832] max-w-xl text-center mx-auto">
-  In line with the company motto of MKY Group, we want to convey the message that we provide sincere service to our customers.
-</p>
-
-<p class="text-[#a66832] max-w-xl text-center mx-auto">
-  Through this motto, we also emphasize that everything we do and every creation in the form of our offerings comes from the heart and is made with love for our customers.
-</p>
-
+    <div
+      class="text-gray-800 text-5xl leading-relaxed space-y-4 text-center font-['Inter']">
+      <p>
+        Wholeheartedly
+        <span class="text-[black] italic font-['Serif'] text-center">
+          Dedicated
+        </span>
+        for You
+      </p>
     </div>
-  <div id="mc" class="flex flex-col items-center">
-  <div class="btn btn-md box-border bg-[#A66832] cursor-text hover:bg-[#A66832] mt-24 mb-4 text-white text-[20px]">
-    Our Gallery
-  </div>
-  
-  <div class="grid grid-cols-4 gap-3 [&>div]:h-[460px] [&>div]:w-[250px] justify-items-center px-28">
-    <div><img src="./assets/images/mc/mc_01.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_02.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_03.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_04.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_05.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_06.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_07.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_08.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_09.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_10.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_11.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-    <div><img src="./assets/images/mc/mc_12.png" alt="Makkany Coffee Gallery" class="w-full h-full object-cover rounded-lg" /></div>
-  </div>
-</div>
+    <div
+      class="text-gray-800 text-base leading-relaxed space-y-4 text-center font-['Inter']">
+      <p class="text-[#a66832] max-w-xl text-center mx-auto">
+        In line with the company motto of MKY Group, we want to convey the
+        message that we provide sincere service to our customers.
+      </p>
+
+      <p class="text-[#a66832] max-w-xl text-center mx-auto">
+        Through this motto, we also emphasize that everything we do and every
+        creation in the form of our offerings comes from the heart and is made
+        with love for our customers.
+      </p>
+    </div>
+    <div id="mc" class="flex flex-col items-center">
+      <div
+        class="btn btn-md box-border bg-[#A66832] cursor-text hover:bg-[#A66832] mt-24 mb-4 text-white text-[20px]">
+        Our Gallery
+      </div>
+
+      <div
+        class="grid grid-cols-4 gap-3 [&>div]:h-[460px] [&>div]:w-[250px] justify-items-center px-28">
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_01.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_02.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_03.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_04.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_05.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_06.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_07.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_08.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_09.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_10.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_11.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+        <div class="relative rounded-lg group overflow-hidden">
+          <img
+            src="./assets/images/mc/mc_12.png"
+            alt="Makkany Coffee Gallery"
+            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div
+            class="absolute inset-0 bg-black/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <span class="text-white text-xl font-semibold">
+              Makkanya Coffee
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
