@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pkl-web-makkanya-coffee</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css" />
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/fontawesome7/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       html {
         scroll-behavior: smooth;
@@ -42,7 +39,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="font-['Inter']">
     <div
       class="navbar sticky top-0 z-[999] bg-[#EFE7E0] shadow-sm justify-around py-3">
       <div class="dropdown">
@@ -333,9 +330,9 @@
       </div>
     </div>
 
-    <div class="inline-block mt-10 flex justify-center">
+    <div class="mt-10 flex justify-center items-center">
       <span
-        class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium flex justify-around items-center px-8">
+        class="bg-[#a66832] text-white px-6 py-2 rounded-full text-lg font-medium px-8">
         Our Objective
       </span>
     </div>
@@ -362,7 +359,7 @@
         with love for our customers.
       </p>
     </div>
-    <div id="mc" class="flex flex-col items-center">
+    <div id="mc" class="flex flex-col items-center mb-24">
       <div
         class="btn btn-md box-border bg-[#A66832] cursor-text hover:bg-[#A66832] mt-24 mb-4 text-white text-[20px]">
         Our Gallery
@@ -516,5 +513,43 @@
         </div>
       </div>
     </div>
+    <footer
+      class="footer footer-horizontal footer-center bg-gradient-to-br from-[#F8F7F3] via-[#FCFAF8] to-[#FDFDFB] text-[#AA7E56] p-10">
+      <aside>
+        <img src="./assets/images/logo.png" width="500" alt="" class="mb-2" />
+        <p class="font-medium text-xl mb-5">
+          Let's be the part of our journey!
+          <br />
+          Contact us for the further information
+        </p>
+        <p class="font-medium text-base">
+          0811660772 (Private Investment) | 0818660772 (Partnership)
+          <br />
+          @makkanyaexpress | @makkanyaexpress |
+          <a href="mailto:info@makkanyagroup.com" class="text-[#7d4e23]">
+            info@makkanyagroup.com
+          </a>
+        </p>
+      </aside>
+      <nav class="-mt-5">
+        <div class="grid grid-flow-col gap-4">
+          <a href="tel:+62811660772" class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-solid fa-phone text-white"></i>
+          </a>
+          <a href="https://wa.me/62818660772?text=Hi+Admin+Makkanya+Group" class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-brands fa-whatsapp fa-lg text-white"></i>
+          </a>
+          <a href="https://www.instagram.com/makkanyaexpress" class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-brands fa-instagram fa-lg text-white"></i>
+          </a>
+          <a href="mailto:info@makkanyagroup.com" class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-solid fa-envelope fa-lg text-white"></i>
+          </a>
+        </div>
+      </nav>
+      <p class="font-medium text-base tracking-wide">
+        © 2025 Makkanya Group
+      </p>
+    </footer>
   </body>
 </html>
