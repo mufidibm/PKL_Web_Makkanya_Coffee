@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pkl-web-makkanya-coffee</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="stylesheet" href="../assets/fontawesome7/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Bikin area hover lebih besar di parent dropdown */
+      .dropdown-hover {
+        position: relative;
+      }
+
+      .dropdown-hover::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 1.3rem;
+        background: transparent;
+        pointer-events: auto;
+      }
+
+      /* Kasih jarak dropdown dari navbar */
+      .dropdown-hover .dropdown-content {
+        margin-top: 0.75rem !important;
+      }
+    </style>
+  </head>
+
+  <body class="font-['Inter']">
+    <div
+      class="navbar sticky top-0 z-[999] bg-[#EFE7E0] shadow-sm justify-around py-3">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a>Item 1</a></li>
+          <li>
+            <a>Parent</a>
+            <ul class="p-2">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="">
+        <a class="hover:cursor-pointer p-0">
+          <img src="../assets/images/logo.png" class="h-10" alt="" />
+        </a>
+      </div>
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-base">
+          <li>
+            <a class="font-medium hover:text-[#84430d]" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="font-medium hover:text-[#84430d]" href="#journey">
+              Journey
+            </a>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Business Unit
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
+              style="margin-top: 20px !important">
+              <li><a>Makkanya Coffee</a></li>
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Our Gallery
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
+              style="margin-top: 20px !important">
+              <li><a href="#mc">Makkanya Coffee</a></li>
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Kemitraan
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
+              style="margin-top: 20px !important">
+              <li><a>Makkanya Express</a></li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-hover">
+            <a
+              tabindex="0"
+              class="flex items-center gap-1 font-medium hover:text-[#84430d]">
+              Partnership
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </a>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu p-2 shadow bg-base-100 rounded-md w-52"
+              style="margin-top: 20px !important">
+              <li><a>Hub Depok</a></li>
+              <li><a>Hub Tangerang</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <a href="contact/" class="btn rounded-[9px] bg-[#804C20] hover:bg-[#A66832] text-white">
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <div><h1>hai king</h1></div>
+
+    <!-- Footer -->
+    <footer
+      class="footer footer-horizontal footer-center bg-gradient-to-br from-[#F8F7F3] via-[#FCFAF8] to-[#FDFDFB] text-[#AA7E56] p-10">
+      <aside>
+        <img src="../assets/images/logo.png" width="500" alt="" class="mb-2" />
+        <p class="font-medium text-xl mb-5">
+          Let's be the part of our journey!
+          <br />
+          Contact us for the further information
+        </p>
+        <p class="font-medium text-base">
+          0811660772 (Private Investment) | 0818660772 (Partnership)
+          <br />
+          @makkanyaexpress | @makkanyaexpress |
+          <a href="mailto:info@makkanyagroup.com" class="text-[#7d4e23]">
+            info@makkanyagroup.com
+          </a>
+        </p>
+      </aside>
+      <nav class="-mt-5">
+        <div class="grid grid-flow-col gap-4">
+          <a
+            href="tel:+62811660772"
+            class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-solid fa-phone text-white"></i>
+          </a>
+          <a
+            href="https://wa.me/62818660772?text=Hi+Admin+Makkanya+Group"
+            class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-brands fa-whatsapp fa-lg text-white"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/makkanyaexpress"
+            class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-brands fa-instagram fa-lg text-white"></i>
+          </a>
+          <a
+            href="mailto:info@makkanyagroup.com"
+            class="bg-[#AA7E56] flex justify-center items-center h-5 w-5 p-4 rounded-full">
+            <i class="fa-solid fa-envelope fa-lg text-white"></i>
+          </a>
+        </div>
+      </nav>
+      <p class="font-medium text-base tracking-wide">© 2025 Makkanya Group</p>
+    </footer>
+  </body>
+</html>
